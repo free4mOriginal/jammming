@@ -8,6 +8,8 @@ class Playlist extends React.Component {
     this.handleNameChange = this.handleNameChange.bind(this);
   }
 
+// passes the input value from the Playlist name field
+// to the updatePlaylistName() method in the Apps.js;
   handleNameChange(e) {
     this.props.onNameChange(e.target.value);
   }

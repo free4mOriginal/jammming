@@ -15,28 +15,17 @@ class SearchBar extends React.Component {
     this.props.onSearch(this.state.term);
   }
 
+// method sets the term state to the target's value;
   handleTermChange(e) {
     let termEvent = e.target.value;
     this.setState({term: termEvent});
   }
 
-/*
-  searchYelp(term, location, sortBy) {
-    Yelp.searchYelp(term, location, sortBy).then(businesses => {
-      this.setState({businesses: businesses});
-    });
-  }
-
-  handleSearch(event) {
-    this.props.searchYelp(this.state.term, this.state.location, this.state.sortBy);
-    event.preventDefault();
-  } */
-
   render() {
     return (
       <div className="SearchBar">
         <input placeholder="Enter A Song, Album, or Artist" onChange={this.handleTermChange} />
-        <a>SEARCH</a>
+        <a onClick={this.search}>SEARCH</a>
       </div>
     );
   }
