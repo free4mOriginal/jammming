@@ -48,7 +48,7 @@ const Spotify = {
         } else {
           return [];
         }
-      }).catch (err => console.log(err));
+      });
   },
 
 // Saving the new playlist name and track URIs to user's Spotify account;
