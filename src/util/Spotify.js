@@ -1,6 +1,6 @@
 let accessToken;
 const clientId = '83c23125eaeb42ce9687201dd08929c4';
-const redirectUri = 'https://github.com/free4mOriginal/jammming';
+const redirectUri = 'https://jammming.netlify.com/index.html';
 
 const Spotify = {
   getAccessToken() {
